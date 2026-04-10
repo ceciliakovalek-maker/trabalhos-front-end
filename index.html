@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bee.com</title>
+    <title>Aula Prática - Listas e Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <style>
-        p {
-            text-align: center
-        }
-        &lt;style&gt;
-body { background-color: lightgray; }
-p { text-align: center;
-color: rgb(255, 242, 0); }
-p { font-size: 18px; }
-&lt;/style&gt;
+    <div class="conteudo-principal">
+        
+        <section class="secao-beneficios">
+            <h2>Por que escolher nossos serviços?</h2>
 
-&lt;link rel=&quot;stylesheet&quot; href=&quot;estilo.css&quot;&gt;
-    </style>
-  </head>
-  <body>
-    <h1 style="text-align: center">Apicultura e seus Beneficios</h1> 
-    <p style="font-size: 20px"><strong>A apicultura pode ser fonte de alto valor econômico com a apitoxina, o veneno da abelha, os cosméticos como xampus e cremes, a própolis, geléia real. O mel é usado na medicina, pois reduz risco de infecções, sem falar na polinização de culturas.</strong></p>
-    <p style="font-size: 20px">Consiste na criação de abelhas exóticas (Apis mellifera) com o objetivo de produzir mel, própolis, geleia real, pólen e cera de abelha. Essa atividade é incentivada pelo Incaper em diversos municípios capixabas e tem se mostrado uma excelente alternativa de diversificação agrícola.</p>
-  </body>
-</html>.
+            <div class="container-flex">
+                <img src="https://via.placeholder.com/300" alt="Imagem Ilustrativa" class="imagem-ajustada">
+                
+                <div class="lista-container">
+                    <h3>Nossos Benefícios</h3>
+                    <ul class="minha-lista-estilizada">
+                        <li>Atendimento personalizado</li>
+                        <li>Suporte 24 horas</li>
+                        <li>Preços competitivos</li>
+                        <li>Garantia de qualidade</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secao-passos">
+            <h3>Como começar (Passo a Passo)</h3>
+            <ol type="A" class="minha-lista-estilizada">
+                <li>Faça seu cadastro no site</li>
+                <li>Escolha o plano ideal</li>
+                <li>Aproveite nossos recursos</li>
+            </ol>
+        </section>
+
+    </div>
+
+</body>
+</html>
