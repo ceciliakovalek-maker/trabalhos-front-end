@@ -1,2 +1,10 @@
 p { color: green; }
 p { color: purple;}
+
+
+
+a:focus, 
+button:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 3px;
+}

@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula Prática - Listas e Layout</title>
+    <title>Aula Prática - Acessibilidade e Layout</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="conteudo-principal">
+    <header>
+        <h1>Serviços e Soluções Web</h1>
         
-        <section class="secao-beneficios">
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#beneficios">Nossos Benefícios</a></li>
+                <li><a href="#passo-a-passo">Como Começar</a></li>
+                <li><a href="contato.html">Entre em contato conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        
+        <section id="beneficios" class="secao-beneficios">
             <h2>Por que escolher nossos serviços?</h2>
 
             <div class="container-flex">
-                <img src="https://via.placeholder.com/300" alt="Imagem Ilustrativa" class="imagem-ajustada">
+                <img src="https://via.placeholder.com/300" alt="Profissional prestando atendimento ao cliente com sorriso no rosto" class="imagem-ajustada">
                 
                 <div class="lista-container">
                     <h3>Nossos Benefícios</h3>
@@ -26,20 +38,32 @@
                     </ul>
                 </div>
             </div>
+            
+            <p>
+                Quer saber mais sobre nossas opções? 
+                <a href="planos.html">Confira a tabela completa de planos e preços</a>.
+            </p>
         </section>
 
         <hr>
 
-        <section class="secao-passos">
-            <h3>Como começar (Passo a Passo)</h3>
-            <ol type="A" class="minha-lista-estilizada">
-                <li>Faça seu cadastro no site</li>
-                <li>Escolha o plano ideal</li>
-                <li>Aproveite nossos recursos</li>
+        <section id="passo-a-passo" class="secao-passos">
+            <h2>Como começar (Passo a Passo)</h2>
+            
+            <ol type="1" class="minha-lista-estilizada">
+                <li>
+                    <a href="cadastro.html">Faça seu cadastro no site oficial</a>
+                </li>
+                <li>Escolha o plano ideal para suas necessidades</li>
+                <li>Aproveite nossos recursos exclusivos</li>
             </ol>
         </section>
 
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Serviços Web. Para dúvidas, <a href="suporte.html">acesse nossa central de suporte e ajuda</a>.</p>
+    </footer>
 
 </body>
 </html>
