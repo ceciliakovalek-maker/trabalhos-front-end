@@ -22,33 +22,41 @@
 
     <main class="conteudo-principal">
         
-        <section id="beneficios" class="secao-beneficios">
+        <!-- Associação via aria-labelledby com o id do h3 interno -->
+        <section id="beneficios" class="secao-beneficios" aria-labelledby="titulo-beneficios">
             <h2>Por que escolher nossos serviços?</h2>
 
             <div class="container-flex">
                 <img src="https://via.placeholder.com/300" alt="Profissional prestando atendimento ao cliente com sorriso no rosto" class="imagem-ajustada">
                 
                 <div class="lista-container">
-                    <h3>Nossos Benefícios</h3>
+                    <h3 id="titulo-beneficios">
+                        <span aria-hidden="true">⭐</span> Nossos Benefícios
+                    </h3>
                     <ul class="minha-lista-estilizada">
-                        <li>Atendimento personalizado</li>
-                        <li>Suporte 24 horas</li>
-                        <li>Preços competitivos</li>
-                        <li>Garantia de qualidade</li>
+                        <li><span aria-hidden="true">✓</span> Atendimento personalizado</li>
+                        <li><span aria-hidden="true">✓</span> Suporte 24 horas</li>
+                        <li><span aria-hidden="true">✓</span> Preços competitivos</li>
+                        <li><span aria-hidden="true">✓</span> Garantia de qualidade</li>
                     </ul>
                 </div>
             </div>
             
             <p>
                 Quer saber mais sobre nossas opções? 
-                <a href="planos.html">Confira a tabela completa de planos e preços</a>.
+                <a href="planos.html">
+                    <span aria-hidden="true">📋</span> Confira a tabela completa de planos e preços
+                </a>.
             </p>
         </section>
 
         <hr>
 
-        <section id="passo-a-passo" class="secao-passos">
-            <h2>Como começar (Passo a Passo)</h2>
+        <!-- Associação via aria-labelledby com o id do h2 -->
+        <section id="passo-a-passo" class="secao-passos" aria-labelledby="titulo-passos">
+            <h2 id="titulo-passos">
+                <span aria-hidden="true">⚙️</span> Como começar (Passo a Passo)
+            </h2>
             
             <ol type="1" class="minha-lista-estilizada">
                 <li>
